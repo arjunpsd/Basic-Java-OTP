@@ -19,8 +19,8 @@ OTPGenerator generates a random numeric password and corresponding HMAC using a 
 	OTP otp = engine.generatePasswordWithHmac(params);
 	
 4. The returned object contains two properties<br>
-	<u>password</u> - contains the generated random numeric password. The password is sent via secure means to the user's email or phone<br>
-	<u>hmac</u> - Hashed message authentication code associated with this password. HMAC value is returned to the front-end requesting the OTP and entered back along with the password during the validation step.
+	<i>password</i> - contains the generated random numeric password. The password is sent via secure means to the user's email or phone<br>
+	<i>hmac</i> - Hashed message authentication code associated with this password. HMAC value is returned to the front-end requesting the OTP and entered back along with the password during the validation step.
 	
 
 <h3>Steps to Validate One-Time-Password</h3>

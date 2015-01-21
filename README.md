@@ -1,2 +1,2 @@
-# SimpleOTPGenerator
-A simple One-Time-Password generator and validator
+# Basic OTP Generator/Validator
+A simple One-Time-Password generator and validator.

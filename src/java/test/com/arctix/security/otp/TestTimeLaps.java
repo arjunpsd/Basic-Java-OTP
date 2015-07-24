@@ -31,7 +31,9 @@ public class TestTimeLaps extends TestCase {
 		for (int i = 1; i < n; i++) {
 			assertNotNull(laps[i - 1].getTime());
 			assertNotNull(laps[i].getTime());
-			assertEquals(laps[i - 1].get(Calendar.MINUTE),laps[i].get(Calendar.MINUTE) + 5);
+			//convert 60 to 0
+			long toBe = laps[i].get(Calendar.MINUTE) == 55 ? 0 : laps[i].get(Calendar.MINUTE) + 5;			
+			assertEquals(laps[i - 1].get(Calendar.MINUTE), toBe);
 		}
 
 	}
